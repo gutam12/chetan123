@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautam Learner - Telegram Channel</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0f1115;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background-color: #14161d;
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #222630;
+        }
+
+        /* Profile Logo Container */
+        .logo-container {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px auto;
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            background-color: #ffffff;
+            padding: 8px;
+        }
+
+        .verified-badge {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            background-color: #0088cc;
+            color: white;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #14161d;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Main Heading */
+        .title {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Pill Badge */
+        .badge-pill {
+            background-color: #1e1e0a;
+            border: 1px solid #554400;
+            color: #ffcc00;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* Timer Text */
+        .timer-text {
+            color: #ff4d4d;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* Main CTA Button */
+        .btn-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(180deg, #ffc700 0%, #ff9900 100%);
+            color: #000000;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 16px;
+            padding: 16px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
+            margin-bottom: 25px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 153, 0, 0.6);
+        }
+
+        /* Feature Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .feature-card {
+            background-color: #1c1f26;
+            border: 1px solid #2a2e39;
+            border-radius: 14px;
+            padding: 14px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #e0e0e0;
+            min-height: 54px;
+        }
+
+        /* Stats Pill */
+        .stats-pill {
+            background-color: #241c0c;
+            border: 1px solid #664d00;
+            color: #ffcc00;
+            padding: 12px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Disclaimer Footer */
+        .disclaimer {
+            font-size: 11px;
+            color: #777e90;
+            line-height: 1.5;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile / Logo -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Stock Learners Logo" class="logo-img">
+            <div class="verified-badge">✓</div>
+        </div>
+
+        <!-- Title -->
+        <h1 class="title">👑 Gautam Learner 👑</h1>
+
+        <!-- Accuracy Badge -->
+        <div class="badge-pill">
+            ⚡ 95% High Accuracy | SEBI Guide Aware
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="timer-text">
+            ⏳ Free Invite Link Expires In: <span id="timer">03:39</span>
+        </div>
+
+        <!-- Join Telegram CTA -->
+        <a href="YOUR_TELEGRAM_LINK_HERE" target="_blank" class="btn-cta">
+            🚀 JOIN FREE TELEGRAM CHANNEL
+        </a>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <div class="feature-card">
+                📊 Daily Market Analysis
+            </div>
+            <div class="feature-card">
+                💎 High Accuracy Signals
+            </div>
+            <div class="feature-card">
+                ⚡ Intraday Nifty / BankNifty
+            </div>
+            <div class="feature-card">
+                📚 14+ Yrs Trading Exp.
+            </div>
+        </div>
+
+        <!-- Active Join Counter -->
+        <div class="stats-pill">
+            🔥 1,000+ Active Traders Joined Today
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="disclaimer">
+            Disclaimer: This channel is strictly for educational and informational purposes only. Options trading involves risk. Please consult your financial advisor before trading.
+        </p>
+    </div>
+
+    <!-- Dynamic Countdown Timer JS -->
+    <script>
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let initialTime = 60 * 3 + 39; // 3 min 39 sec
+            let display = document.querySelector('#timer');
+            startTimer(initialTime, display);
+        };
+    </script>
+</body>
+</html>
