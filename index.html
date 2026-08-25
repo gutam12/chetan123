@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gautam Learner - Telegram Channel</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1703768150728001');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1703768150728001&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         * {
             box-sizing: border-box;
@@ -100,7 +119,7 @@
             margin-bottom: 20px;
         }
 
-        /* Main CTA Button */
+        /* Animated CTA Button with Glow & Pulse Effect */
         .btn-cta {
             display: flex;
             align-items: center;
@@ -113,16 +132,40 @@
             font-size: 16px;
             padding: 16px 20px;
             border-radius: 30px;
-            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
             margin-bottom: 25px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            
+            /* Dynamic Animation Setup */
+            animation: pulseGlow 2s infinite ease-in-out;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
+        /* Hover & Active State */
         .btn-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 153, 0, 0.6);
+            transform: scale(1.04);
+            background: linear-gradient(180deg, #ffe066 0%, #ffaa00 100%);
+            box-shadow: 0 0 25px rgba(255, 180, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-cta:active {
+            transform: scale(0.98);
+        }
+
+        /* Continuous Pulse Animation */
+        @keyframes pulseGlow {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 12px rgba(255, 153, 0, 0.5);
+            }
+            50% {
+                transform: scale(1.03);
+                box-shadow: 0 0 22px rgba(255, 175, 0, 0.85);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 12px rgba(255, 153, 0, 0.5);
+            }
         }
 
         /* Feature Grid */
@@ -195,7 +238,7 @@
             ⏳ Free Invite Link Expires In: <span id="timer">03:39</span>
         </div>
 
-        <!-- Join Telegram CTA -->
+        <!-- Animated Join Telegram CTA -->
         <a href="https://t.me/+nI0d3B4AXL9iNGI1" target="_blank" class="btn-cta">
             🚀 JOIN FREE TELEGRAM CHANNEL
         </a>
